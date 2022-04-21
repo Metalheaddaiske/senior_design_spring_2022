@@ -7,7 +7,7 @@ import Home from './pages/index';
 import Documents from './pages/Documents';
 import Clients from './pages/Clients';
 import BookingCalendar from './pages/BookingCalendar';
-
+const cal_sup = require('./components/calendar_supplement');
   
 function App() {
 return (

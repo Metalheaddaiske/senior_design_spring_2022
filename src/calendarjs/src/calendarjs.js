@@ -304,7 +304,9 @@
  * @param       {Object}    searchOptions                               All the configurable options that should be used (refer to "Search Options" documentation for properties).
  * @param       {Object}    startDateTime                               The date that the calendar should start from (defaults to today).
  */
-function calendarJs( id, options, searchOptions, startDateTime ) {
+
+//below line was previously "function calendarJs( id, options, searchOptions, startDateTime )". Edited by Steven
+export function calendarJs( id, options, searchOptions, startDateTime ) {
     var _options = {},
         _optionsForSearch = {},
         _keyCodes = {
@@ -544,6 +546,9 @@ function calendarJs( id, options, searchOptions, startDateTime ) {
      * Build (layout, days, etc)
      * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
      */
+    
+    
+ 
 
     function build( newStartDateTime, fullRebuild ) {
         _currentDate = isDefined( newStartDateTime ) ? newStartDateTime : new Date();
